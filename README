@@ -1,0 +1,29 @@
+Compilation and running instructions by Jeffrey H. Diaz
+
+xsh_reverse.c:
+Add file to user@nexos-server ~/xinu_mips-1.0.2/shell
+Update user@nexos-server ~/xinu_mips-1.0.2/include/shell.h file appropriately
+Update user@nexos-server ~/xinu_mips-1.0.2/shell/shell.c file appropriately
+Update user@nexos-server ~/xinu_mips-1.0.2/compile/Makefile file appropriately
+Go to user@nexos-server ~/xinu_mips-1.0.2/compile and compile using 'gmake'
+Log onto xinu and use this shell command by typing 'reverse [desired string to be reversed]'
+
+xsh_schedule.c:
+Add file to user@nexos-server ~/xinu_mips-1.5/shell
+Update user@nexos-server ~/xinu_mips-1.5/include/shell.h file appropriately
+Update user@nexos-server ~/xinu_mips-1.5/shell/shell.c file appropriately
+Update user@nexos-server ~/xinu_mips-1.5/shell/Makerules file appropriately
+Go to user@nexos-server ~/xinu_mips-1.5/compile and compile using 'gmake'
+Log onto xinu and use this shell command by typing 'schedule'
+It runs infinitely, so press ctrl + backspace to exit.
+
+xsh_chat.c:
+Add to user@nexos-server ~/xinu_mips-1.0.2/shell
+Update user@nexos-server ~/xinu_mips-1.0.2/include/shell.h appropriately
+Update user@nexos-server ~/xinu_mips-1.0.2/shell/shell.c appropriately
+Update user@nexos-server ~/xinu_mips-1.0.2/compile/Makefile appropriately
+Go to user@nexos-server ~/xinu_mips-1.0.2/compile and compile using 'gmake'
+Log onto xinu and use this shell command by typing 'chat [number of users desired]'
+The username for user1 (TTY0) is 'user1' and the password is 'pass1'
+The username for user2 (TTY1) is 'user2' and the password is 'pass2'
+

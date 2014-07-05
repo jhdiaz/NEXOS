@@ -1,0 +1,19 @@
+Project 2 Report by Jeffrey H. Diaz.
+
+xsh_reverse.c:
+For this program, I made an array of characters to hold the string argument. Then I made another array of characters of the
+same size and added to it the characters from the first string in reverse order. I then printed this new array characters.
+
+xsh_schedule.c:
+I first diagramed a cyclic executive schedule for the given table. Once I decided the frame size (4) and hyper-period (24),
+I proceeded to make a ttable based on this schedule with each row being a frame and every column being the task carried out
+at the specific frame. I then made a task function for each task of the table, and a thread corresponding to each task.
+The ttable contained ints which dictated which thread would be run in a for loop. Sleep periods are added after each thread
+which gradually increase because of errors that were caused when there were no sleep periods between the creation of threads.
+
+xsh_chat.c:
+The program takes 1 argument (argument is defaulted to 1 if no argument is entered) which is the number of users that will
+be chatting. Once the program starts, depending on the amount of users requested, one or two users will need to log in. Firstby entering a specific username (one for each port), then by entering a specific password associated with each username. 
+Each user has an exit command which is executed by typing '--exit'. However, only user1 has the kick command which is 
+executed by typing '--kick'. The chat is turn based, unless there is only one user, in which case the text is read from and 
+written to the same screen. When there are 2 users, each user must wait their turn to chat. User1 is automatically associatedwith TTY0 (because only the user on this port will recieve the proper print commands) and user2 with TTY1.
